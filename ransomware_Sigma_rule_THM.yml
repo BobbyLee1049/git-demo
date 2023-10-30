@@ -1,0 +1,25 @@
+title: Ransomware activity
+status: Experimental
+description: This rule will determined if a file event has occurred related to .txt file that could signify ransomware activity
+author: Brandon Choyce
+date: 7/7/2023
+logsource:
+    product: windows
+    category: file_event
+detection:
+    selection_eid: 
+        EventID: 11
+    selection:
+        Image: 
+            - '\cmd.exe'
+        TargetFilename|endswith:
+            - '.txt'
+    condition: selection 
+falsepositives: 
+    - Unknown
+level: high
+references: 
+- https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=90011
+tags:
+    - attack.T1072
+    - attack.collection

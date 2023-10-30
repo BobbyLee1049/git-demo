@@ -1,0 +1,23 @@
+10.in-addr.arpa
+	primary name server = localhost
+	responsible mail addr = nobody.invalid
+	serial  = 1
+	refresh = 3600 (1 hour)
+	retry   = 1200 (20 mins)
+	expire  = 604800 (7 days)
+	default TTL = 10800 (3 hours)
+Server:  UnKnown
+Address:  10.255.0.0
+
+Name:    google.com
+Addresses:  2607:f8b0:4004:c06::66
+	  2607:f8b0:4004:c06::71
+	  2607:f8b0:4004:c06::65
+	  2607:f8b0:4004:c06::8a
+	  172.253.115.138
+	  172.253.115.100
+	  172.253.115.102
+	  172.253.115.139
+	  172.253.115.113
+	  172.253.115.101
+

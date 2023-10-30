@@ -1,0 +1,13 @@
+Get-WMIObject -Namespace root\Subscription -Class __EventFilter
+
+Get-WMIObject -Namespace root\Subscription -Class __EventConsumer
+
+Get-WMIObject -Namespace root\Subscription -Class __FilterToConsumerBinding
+
+
+
+
+1 exam attempt and 2 practices 4 months to take it.  
+$949
+
+https://t.co/cKEUcNwL4j+

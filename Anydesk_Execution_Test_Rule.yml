@@ -1,0 +1,23 @@
+title: Anydesk Installation
+status: Experimental
+description: This rule determines if the Anydesk application was downloaded and executed by an adversary to maintain persistence
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection: 
+        CommandLine|contains|all:
+            - '--install'
+            - '--start-with-win'
+            - '--silent'
+        CurrentDirectory|contains:
+         - 'C:\ProgramData\AnyDesk.exe' 
+    condition: selection 
+falsepositives: 
+    - Legitimate deployment of AnyDesk
+level: High
+references: 
+- https://twitter.com/TheDFIRReport/status/1423361119926816776?s=20
+tags: 
+    - attack.command_and_control
+    - attack.t1219
