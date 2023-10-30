@@ -2,3 +2,7 @@
 
 this is a demo repo for an online class
 blahblah
+
+## Ipsum Below
+
+I enjoy using github and learning new things
